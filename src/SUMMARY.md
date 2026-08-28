@@ -111,3 +111,5 @@
 - [Testing](development/testing.md)
   - [Spec Tests](development/testing/spec-tests.md)
   - [Writing Tests](development/testing/writing-tests.md)
+- [Language Design](development/design.md)
+- [Roadmap](development/roadmap.md)
