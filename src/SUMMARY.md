@@ -108,3 +108,6 @@
 # Development
 
 - [Contributing](development/contributing.md)
+- [Testing](development/testing.md)
+  - [Spec Tests](development/testing/spec-tests.md)
+  - [Writing Tests](development/testing/writing-tests.md)
