@@ -32,3 +32,8 @@
   - [Pipe](fundamentals/operators/pipe.md)
   - [Pipe Apply](fundamentals/operators/pipe-apply.md)
   - [Function Composition](fundamentals/operators/composition.md)
+- [Control Flow](fundamentals/control-flow/README.md)
+  - [Conditional Logic](fundamentals/control-flow/conditionals.md)
+  - [Loops](fundamentals/control-flow/loops.md)
+  - [Match Expressions](fundamentals/control-flow/match.md)
+  - [Guard Clauses](fundamentals/control-flow/guards.md)
