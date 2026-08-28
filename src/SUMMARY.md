@@ -63,3 +63,8 @@
 - [Deep Nesting](advanced/deep-nesting.md)
 - [Shell Integration Best Practices](advanced/shell-integration.md)
 - [Performance Considerations](advanced/performance.md)
+
+# Standard Library Reference
+
+- [Standard Library Overview](stdlib/README.md)
+- [Print Functions](stdlib/core.md)
