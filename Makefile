@@ -1,4 +1,4 @@
-.PHONY: all build serve clean watch install test help highlight
+.PHONY: all build serve clean watch install test verify outputs help highlight
 
 # mdBook's default build directory (see book.toml: no build-dir override)
 BUILD_DIR := book
@@ -51,6 +51,21 @@ test: build
 	@grep -q suji $(BUILD_DIR)/highlight.js || (echo "highlight.js in the build has no Suji support" && exit 1)
 	@echo "Build successful!"
 
+# Run every ```suji block in the book against the interpreter, then check links,
+# heading anchors and table alignment
+verify:
+	@echo "Verifying code examples..."
+	@./scripts/verify_book.sh
+	@echo "Checking links, anchors and tables..."
+	@python3 scripts/check_markdown.py
+
+# Print what every example actually prints, for comparing against the outputs
+# documented in `# comment` annotations and ```text blocks.
+#   make outputs FILES=src/cookbook/apis.md
+FILES ?= $(shell find src -name '*.md' | sort)
+outputs:
+	@./scripts/run_blocks.sh $(FILES)
+
 # Display help
 help:
 	@echo "Suji Book Makefile"
@@ -60,6 +75,8 @@ help:
 	@echo "  highlight  - Build the Suji-aware highlight.js bundle"
 	@echo "  serve      - Start local server with live reload"
 	@echo "  watch      - Watch for changes and rebuild"
+	@echo "  verify     - Run every Suji example and check links/anchors/tables"
+	@echo "  outputs    - Print what each example prints (FILES=... to narrow)"
 	@echo "  clean      - Remove build artifacts"
 	@echo "  install    - Install mdbook and node dependencies"
 	@echo "  test       - Check that the book builds correctly"
