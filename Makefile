@@ -1,4 +1,4 @@
-.PHONY: all build serve clean watch install help highlight
+.PHONY: all build serve clean watch install test help highlight
 
 # mdBook's default build directory (see book.toml: no build-dir override)
 BUILD_DIR := book
@@ -42,6 +42,15 @@ install:
 	@echo "Installing node dependencies..."
 	npm install
 
+# Check that the book builds and the highlighter made it into the output
+test: build
+	@echo "Testing the Suji highlight definition..."
+	npm run test-highlight
+	@echo "Testing book build..."
+	@test -f $(BUILD_DIR)/index.html || (echo "Build failed: no index.html" && exit 1)
+	@grep -q suji $(BUILD_DIR)/highlight.js || (echo "highlight.js in the build has no Suji support" && exit 1)
+	@echo "Build successful!"
+
 # Display help
 help:
 	@echo "Suji Book Makefile"
@@ -53,4 +62,5 @@ help:
 	@echo "  watch      - Watch for changes and rebuild"
 	@echo "  clean      - Remove build artifacts"
 	@echo "  install    - Install mdbook and node dependencies"
+	@echo "  test       - Check that the book builds correctly"
 	@echo "  help       - Show this help message"
