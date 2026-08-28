@@ -84,3 +84,9 @@
 - [Mathematics](stdlib/math.md)
 - [Cryptography](stdlib/crypto.md)
 - [Dotenv Files](stdlib/dotenv.md)
+
+# Examples
+
+- [Examples Overview](examples/README.md)
+- [Fibonacci Sequence](examples/fibonacci.md)
+- [Quicksort Algorithm](examples/quicksort.md)
