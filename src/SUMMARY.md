@@ -104,3 +104,7 @@
 - [Working with APIs](cookbook/apis.md)
 - [Text Processing](cookbook/text-processing.md)
 - [Scripting Tasks](cookbook/scripting.md)
+
+# Development
+
+- [Contributing](development/contributing.md)
