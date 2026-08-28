@@ -49,3 +49,7 @@
 - [Modules](modules/README.md)
   - [Imports](modules/imports.md)
   - [Exports](modules/exports.md)
+  - [Module Resolution](modules/resolution.md)
+  - [Module Organization](modules/organization.md)
+  - [Loading and Caching](modules/module-system.md)
+  - [Standard Library Structure](modules/stdlib-structure.md)
