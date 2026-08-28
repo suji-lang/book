@@ -93,3 +93,9 @@
 - [Function Composition](examples/composition.md)
 - [Regex Matching](examples/regex-matching.md)
 - [Building CLI Tools](examples/cli-tools.md)
+
+# Cookbook
+
+- [Common Patterns](cookbook/README.md)
+- [HTTP with curl](cookbook/http.md)
+- [File Processing](cookbook/file-processing.md)
