@@ -73,3 +73,7 @@
   - [YAML](stdlib/data-formats/yaml.md)
   - [TOML](stdlib/data-formats/toml.md)
   - [CSV](stdlib/data-formats/csv.md)
+- [I/O and Streams](stdlib/io.md)
+- [Environment](stdlib/env.md)
+- [Operating System](stdlib/os.md)
+- [Paths](stdlib/path.md)
