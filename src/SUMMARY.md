@@ -61,3 +61,5 @@
 - [Type Checking Methods](advanced/type-checking.md)
 - [String Interpolation](advanced/string-interpolation.md)
 - [Deep Nesting](advanced/deep-nesting.md)
+- [Shell Integration Best Practices](advanced/shell-integration.md)
+- [Performance Considerations](advanced/performance.md)
