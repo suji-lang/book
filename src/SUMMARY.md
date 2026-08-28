@@ -119,3 +119,6 @@
 - [Language Versions](appendices/versions.md)
 - [Syntax Reference](appendices/syntax-reference.md)
 - [Operator Precedence](appendices/precedence.md)
+- [Error Codes](appendices/error-codes.md)
+- [Glossary](appendices/glossary.md)
+- [Resources](appendices/resources.md)
