@@ -58,3 +58,6 @@
 
 - [Error Handling Deep Dive](advanced/error-handling.md)
 - [Pattern Matching Deep Dive](advanced/pattern-matching.md)
+- [Type Checking Methods](advanced/type-checking.md)
+- [String Interpolation](advanced/string-interpolation.md)
+- [Deep Nesting](advanced/deep-nesting.md)
