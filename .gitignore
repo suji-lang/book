@@ -12,10 +12,19 @@ yarn-error.log*
 theme/highlight.js
 theme/highlight.js.map
 
+# Scratch files written by the book's own examples when they are run. Several
+# examples demonstrate io:write and the like, so running them from the
+# repository root leaves these behind.
+/output/
+/output.txt
+/report.txt
+
 # Editor directories and files
 .vscode/
 .idea/
 *.sublime-*
+*.swp
+*.swo
 .DS_Store
 
 # Temporary files
