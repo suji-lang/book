@@ -43,3 +43,6 @@
 - [Functions](functions/README.md)
   - [Basic Functions](functions/basics.md)
   - [Closures](functions/closures.md)
+  - [Higher-Order Functions](functions/higher-order.md)
+  - [Recursion](functions/recursion.md)
+  - [Multiple Return Values](functions/multiple-returns.md)
