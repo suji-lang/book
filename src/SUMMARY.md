@@ -68,3 +68,8 @@
 
 - [Standard Library Overview](stdlib/README.md)
 - [Print Functions](stdlib/core.md)
+- [Data Formats](stdlib/data-formats/README.md)
+  - [JSON](stdlib/data-formats/json.md)
+  - [YAML](stdlib/data-formats/yaml.md)
+  - [TOML](stdlib/data-formats/toml.md)
+  - [CSV](stdlib/data-formats/csv.md)
