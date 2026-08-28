@@ -46,3 +46,6 @@
   - [Higher-Order Functions](functions/higher-order.md)
   - [Recursion](functions/recursion.md)
   - [Multiple Return Values](functions/multiple-returns.md)
+- [Modules](modules/README.md)
+  - [Imports](modules/imports.md)
+  - [Exports](modules/exports.md)
