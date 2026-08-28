@@ -90,3 +90,6 @@
 - [Examples Overview](examples/README.md)
 - [Fibonacci Sequence](examples/fibonacci.md)
 - [Quicksort Algorithm](examples/quicksort.md)
+- [Function Composition](examples/composition.md)
+- [Regex Matching](examples/regex-matching.md)
+- [Building CLI Tools](examples/cli-tools.md)
