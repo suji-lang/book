@@ -99,3 +99,8 @@
 - [Common Patterns](cookbook/README.md)
 - [HTTP with curl](cookbook/http.md)
 - [File Processing](cookbook/file-processing.md)
+- [Data Transformation](cookbook/data-transformation.md)
+- [Configuration Management](cookbook/config-management.md)
+- [Working with APIs](cookbook/apis.md)
+- [Text Processing](cookbook/text-processing.md)
+- [Scripting Tasks](cookbook/scripting.md)
