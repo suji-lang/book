@@ -53,3 +53,8 @@
   - [Module Organization](modules/organization.md)
   - [Loading and Caching](modules/module-system.md)
   - [Standard Library Structure](modules/stdlib-structure.md)
+
+# Advanced Topics
+
+- [Error Handling Deep Dive](advanced/error-handling.md)
+- [Pattern Matching Deep Dive](advanced/pattern-matching.md)
