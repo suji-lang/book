@@ -113,3 +113,9 @@
   - [Writing Tests](development/testing/writing-tests.md)
 - [Language Design](development/design.md)
 - [Roadmap](development/roadmap.md)
+
+# Appendices
+
+- [Language Versions](appendices/versions.md)
+- [Syntax Reference](appendices/syntax-reference.md)
+- [Operator Precedence](appendices/precedence.md)
