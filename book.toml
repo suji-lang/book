@@ -25,6 +25,10 @@ edit-url-template = "https://github.com/suji-lang/book/edit/main/src/{path}"
 # link needs that prefix.
 site-url = "/book/"
 smart-punctuation = true
+# The Suji-aware highlight.js bundle is not listed as additional-js on purpose:
+# theme/book.js needs `hljs` at load time, and additional-js is injected after
+# book.js. It is built to theme/highlight.js instead, which mdBook loads as a
+# theme override and copies into the output itself.
 
 [output.html.playground]
 copyable = true

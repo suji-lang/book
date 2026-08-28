@@ -1,0 +1,14 @@
+{
+  "name": "suji-book",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "The Suji Programming Language Book",
+  "scripts": {
+    "build-highlight": "vite build",
+    "watch-highlight": "vite build --watch"
+  },
+  "devDependencies": {
+    "highlight.js": "^11.9.0",
+    "vite": "^5.0.0"
+  }
+}
