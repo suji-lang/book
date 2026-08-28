@@ -1,0 +1,60 @@
+/* Custom Suji Book Styling
+ *
+ * Colours here come from mdBook's per-theme variables (theme/css/variables.css)
+ * so that every rule follows the reader's theme. Code colours are not set in
+ * this file at all: they belong to suji-light.css and suji-dark.css, exactly
+ * one of which is enabled at a time. */
+
+:root {
+    --suji-primary: #4a90e2;
+    --suji-accent: #50c878;
+}
+
+/* Code blocks: shape only, the surface comes from the active highlight theme */
+pre > code {
+    border: 1px solid var(--code-border, transparent);
+    border-radius: 6px;
+    padding: 1em;
+}
+
+/* Inline code. The Suji highlight bundle calls hljs.highlightAll(), which only
+   touches `pre code`, so inline code never gets the .hljs class that mdBook's
+   own inline rules key off. --code-bg comes from whichever highlight theme is
+   currently enabled, so inline code shares the surface of the blocks. */
+:not(pre) > code {
+    color: var(--inline-code-color);
+    background-color: var(--code-bg, var(--quote-bg));
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+th, td {
+    border: 1px solid var(--table-border-color);
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background: var(--table-header-bg);
+}
+
+/* Better spacing for lists */
+ul, ol {
+    padding-left: 2em;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+/* Blockquote styling for admonitions */
+blockquote {
+    border-inline-start: 4px solid var(--suji-primary);
+}
