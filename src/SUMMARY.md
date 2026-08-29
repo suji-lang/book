@@ -104,3 +104,21 @@
 - [Working with APIs](cookbook/apis.md)
 - [Text Processing](cookbook/text-processing.md)
 - [Scripting Tasks](cookbook/scripting.md)
+
+# Development
+
+- [Contributing](development/contributing.md)
+- [Testing](development/testing.md)
+  - [Spec Tests](development/testing/spec-tests.md)
+  - [Writing Tests](development/testing/writing-tests.md)
+- [Language Design](development/design.md)
+- [Roadmap](development/roadmap.md)
+
+# Appendices
+
+- [Language Versions](appendices/versions.md)
+- [Syntax Reference](appendices/syntax-reference.md)
+- [Operator Precedence](appendices/precedence.md)
+- [Error Codes](appendices/error-codes.md)
+- [Glossary](appendices/glossary.md)
+- [Resources](appendices/resources.md)
