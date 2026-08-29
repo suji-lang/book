@@ -1,0 +1,45 @@
+[book]
+title = "The Suji Programming Language"
+authors = ["Suji Contributors"]
+description = "A comprehensive guide to the Suji programming language"
+language = "en"
+src = "src"
+
+[build]
+# build-dir = "book"  # default
+create-missing = false
+
+# Preprocessors for enhanced functionality
+# Note: Install with: cargo install mdbook-linkcheck mdbook-mermaid mdbook-katex
+# Commented out until preprocessors are installed
+# [preprocessor.linkcheck]
+# [preprocessor.mermaid]
+# [preprocessor.katex]
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/suji-lang/book"
+edit-url-template = "https://github.com/suji-lang/book/edit/main/src/{path}"
+# The book is published under https://suji-lang.org/book/, so every generated
+# link needs that prefix.
+site-url = "/book/"
+smart-punctuation = true
+
+[output.html.playground]
+copyable = true
+runnable = false
+
+[output.html.search]
+enable = true
+limit-results = 30
+boost-title = 2
+boost-hierarchy = 1
+
+[output.html.fold]
+enable = true
+level = 1
+
+# Redirects for moved/renamed pages (add as needed)
+[output.html.redirect]
+# Example: "/old-page.html" = "new-location.html"
