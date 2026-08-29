@@ -37,3 +37,19 @@
   - [Loops](fundamentals/control-flow/loops.md)
   - [Match Expressions](fundamentals/control-flow/match.md)
   - [Guard Clauses](fundamentals/control-flow/guards.md)
+
+# Functions and Modules
+
+- [Functions](functions/README.md)
+  - [Basic Functions](functions/basics.md)
+  - [Closures](functions/closures.md)
+  - [Higher-Order Functions](functions/higher-order.md)
+  - [Recursion](functions/recursion.md)
+  - [Multiple Return Values](functions/multiple-returns.md)
+- [Modules](modules/README.md)
+  - [Imports](modules/imports.md)
+  - [Exports](modules/exports.md)
+  - [Module Resolution](modules/resolution.md)
+  - [Module Organization](modules/organization.md)
+  - [Loading and Caching](modules/module-system.md)
+  - [Standard Library Structure](modules/stdlib-structure.md)
