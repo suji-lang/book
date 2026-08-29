@@ -84,3 +84,23 @@
 - [Mathematics](stdlib/math.md)
 - [Cryptography](stdlib/crypto.md)
 - [Dotenv Files](stdlib/dotenv.md)
+
+# Examples
+
+- [Examples Overview](examples/README.md)
+- [Fibonacci Sequence](examples/fibonacci.md)
+- [Quicksort Algorithm](examples/quicksort.md)
+- [Function Composition](examples/composition.md)
+- [Regex Matching](examples/regex-matching.md)
+- [Building CLI Tools](examples/cli-tools.md)
+
+# Cookbook
+
+- [Common Patterns](cookbook/README.md)
+- [HTTP with curl](cookbook/http.md)
+- [File Processing](cookbook/file-processing.md)
+- [Data Transformation](cookbook/data-transformation.md)
+- [Configuration Management](cookbook/config-management.md)
+- [Working with APIs](cookbook/apis.md)
+- [Text Processing](cookbook/text-processing.md)
+- [Scripting Tasks](cookbook/scripting.md)
