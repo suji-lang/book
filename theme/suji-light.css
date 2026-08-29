@@ -1,0 +1,104 @@
+/*
+ * Code highlighting for the light themes (light, rust).
+ *
+ * A light adaptation of the palette suji-lang.org uses for its code samples:
+ * the same hues, darkened until each one clears 4.9 contrast against the
+ * #f4f6f9 surface. The site's coral (hue 13) and peach (hue 24) darken into
+ * nearly the same brown, so the number slot is nudged to hue 30 to stay clear
+ * of the coral keywords and operators.
+ *
+ * As in the dark themes, operators take the keyword colour rather than the
+ * site's number colour.
+ *
+ * Weight is never used to carry meaning: bold is reserved for .hljs-strong.
+ */
+
+/* Exactly one of the two palettes is enabled at a time, so this is how
+   custom.css learns the current code surface and border. */
+:root {
+  --code-bg: #f4f6f9;
+  --code-border: #e2e6ee;
+}
+
+/* Comment */
+.hljs-comment,
+.hljs-quote,
+.hljs-meta {
+  color: #616875;
+  font-style: italic;
+}
+
+/* Coral: keywords, and the operators that bind them together. Suji is dense
+   with `::`, `|>` and `=>`, including the pipes that delimit a lambda's
+   parameter list, and they read as structure rather than as values. */
+.hljs-keyword,
+.hljs-literal,
+.hljs-operator,
+.hljs-subst,
+.hljs-selector-tag,
+.hljs-tag,
+.hljs-name {
+  color: #a83318;
+}
+
+/* Amber: numbers */
+.hljs-number,
+.hljs-params {
+  color: #9a5714;
+}
+
+/* Blue: anything being called */
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-function,
+.hljs-type,
+.hljs-variable,
+.hljs-template-variable {
+  color: #1c7291;
+}
+
+/* Green: strings, shell templates and regex literals */
+.hljs-string,
+.hljs-regexp,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+  color: #207954;
+}
+
+/* Purple: module paths and map keys */
+.hljs-title,
+.hljs-section,
+.hljs-attr,
+.hljs-attribute,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #723290;
+}
+
+.hljs-link {
+  color: #1c7291;
+  text-decoration: underline;
+}
+
+/* `pre > code` is listed alongside .hljs so that blocks in a language the
+   bundle does not register (```text, ```csv) get the same surface. */
+.hljs,
+pre > code {
+  display: block;
+  overflow-x: auto;
+  background: #f4f6f9;
+  color: #1f2937;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  color: #a83318;
+}

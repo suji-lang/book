@@ -1,0 +1,105 @@
+/*
+ * Code highlighting for the dark themes (coal, navy, ayu).
+ *
+ * The palette is the one suji-lang.org uses for its code samples, so the book
+ * and the site look like the same language. Two departures from the site:
+ * operators take the keyword colour rather than the number colour, and comments
+ * are lifted from #6b7280 (3.41 contrast, too thin for the `# expected output`
+ * annotations this book leans on) to #828a99 (4.75).
+ *
+ * Loaded by theme/index.hbs, which links this file under both of the ids that
+ * book.js toggles for dark themes, so ayu gets the Suji palette too rather than
+ * the original Ayu colours.
+ *
+ * Weight is never used to carry meaning: bold is reserved for .hljs-strong.
+ */
+
+/* Exactly one of the two palettes is enabled at a time, so this is how
+   custom.css learns the current code surface and border. */
+:root {
+  --code-bg: #1a1f2a;
+  --code-border: #2a3140;
+}
+
+/* Comment */
+.hljs-comment,
+.hljs-quote,
+.hljs-meta {
+  color: #828a99;
+  font-style: italic;
+}
+
+/* Coral: keywords, and the operators that bind them together. Suji is dense
+   with `::`, `|>` and `=>`, including the pipes that delimit a lambda's
+   parameter list, and they read as structure rather than as values. */
+.hljs-keyword,
+.hljs-literal,
+.hljs-operator,
+.hljs-subst,
+.hljs-selector-tag,
+.hljs-tag,
+.hljs-name {
+  color: #e27d60;
+}
+
+/* Peach: numbers */
+.hljs-number,
+.hljs-params {
+  color: #e8a87c;
+}
+
+/* Sky: anything being called */
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-function,
+.hljs-type,
+.hljs-variable,
+.hljs-template-variable {
+  color: #7ec8e3;
+}
+
+/* Mint: strings, shell templates and regex literals */
+.hljs-string,
+.hljs-regexp,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+  color: #85dcb8;
+}
+
+/* Orchid: module paths and map keys */
+.hljs-title,
+.hljs-section,
+.hljs-attr,
+.hljs-attribute,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #c9a0dc;
+}
+
+.hljs-link {
+  color: #7ec8e3;
+  text-decoration: underline;
+}
+
+/* `pre > code` is listed alongside .hljs so that blocks in a language the
+   bundle does not register (```text, ```csv) get the same surface. */
+.hljs,
+pre > code {
+  display: block;
+  overflow-x: auto;
+  background: #1a1f2a;
+  color: #f5f5f5;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  color: #e27d60;
+}

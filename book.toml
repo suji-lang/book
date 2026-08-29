@@ -25,6 +25,16 @@ edit-url-template = "https://github.com/suji-lang/book/edit/main/src/{path}"
 # link needs that prefix.
 site-url = "/book/"
 smart-punctuation = true
+# mdBook only copies its own three hardcoded highlight filenames out of theme/,
+# so the palettes ride along as additional CSS instead. theme/index.hbs links
+# all three of these by hand rather than through the additional_css loop,
+# because the palettes need the ids that book.js toggles; add new entries in
+# both places.
+additional-css = ["theme/custom.css", "theme/suji-light.css", "theme/suji-dark.css"]
+# The Suji-aware highlight.js bundle is not listed as additional-js on purpose:
+# theme/book.js needs `hljs` at load time, and additional-js is injected after
+# book.js. It is built to theme/highlight.js instead, which mdBook loads as a
+# theme override and copies into the output itself.
 
 [output.html.playground]
 copyable = true
